@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Classes\GroupSpawner.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
+     <Compile Include="Assets\Classes\Waypoint.boo" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
