@@ -13,7 +13,13 @@ class NPC (MonoBehaviour):
 
 	
 	def PickDirection() as Quaternion:
-		return Quaternion.Euler(0,Random.Range(0,360),0)
+		// return Quaternion.Euler(0,Random.Range(0,360),0)
+		waypoints as (GameObject)
+		waypoints = GameObject.FindGameObjectsWithTag("Waypoints")
+		waypoint = waypoints[Random.Range(0,len(waypoints) - 1)]
+		print "Picked waypoint " + waypoint.name
+		return Quaternion.LookRotation(Vector3.MoveTowards(transform.position, waypoint.transform.position, 100))
+		
 		
 	def OnCollisionEnter():
 		direction = PickDirection()
