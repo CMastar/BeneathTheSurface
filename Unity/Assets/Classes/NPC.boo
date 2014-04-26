@@ -8,11 +8,9 @@ class NPC (MonoBehaviour):
 		direction = PickDirection()
 	
 	def FixedUpdate ():
-		if Input.GetButton('Sprint'):
-			forceToUse = moveForce * 2
-		else:
-			forceToUse = moveForce
-		rigidbody.AddForce(direction * Vector3.forward * forceToUse * Time.fixedDeltaTime, ForceMode.VelocityChange)
+
+		rigidbody.AddForce(direction * Vector3.forward * moveForce * Time.fixedDeltaTime, ForceMode.VelocityChange)
+
 	
 	def PickDirection() as Quaternion:
 		return Quaternion.Euler(0,Random.Range(0,360),0)
