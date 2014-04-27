@@ -1,6 +1,7 @@
 ﻿import UnityEngine
 
 class NPC (MonoBehaviour): 
+	public isAndroid as bool = false
 	public minForce as single
 	public maxForce as single
 	public timeToDodge as double
@@ -11,11 +12,12 @@ class NPC (MonoBehaviour):
 	aimingFor as GameObject
 	public animCont as SpriteAnimationController
 	setAnim as bool = false
-	public isAndroid as bool = false
+
 	
 	def Start ():
 		actualForce = Random.Range(minForce,maxForce)
 		RandomWaypoint()
+		renderer.enabled = false
 		// animCont = gameObject.GetComponent[of SpriteAnimationController]()
 		
 	
@@ -23,7 +25,7 @@ class NPC (MonoBehaviour):
 		setAnim = false
 		if sideStepTime > 0:
 			sideStepTime = sideStepTime - Time.fixedDeltaTime
-			renderer.material.color = Color.green
+			// renderer.material.color = Color.green
 			//WalkingAnimation()
 		else:
 			if sideStepTime <= 0 and sideStepTime != -1:
@@ -34,7 +36,7 @@ class NPC (MonoBehaviour):
 				else:
 					RandomWaypoint()
 			directionVector = Vector3.forward
-			renderer.material.color = Color.white
+			// renderer.material.color = Color.white
 		rigidbody.AddForce(direction  /* transform.rotation */ * directionVector  * actualForce * Time.fixedDeltaTime, ForceMode.VelocityChange)
 		//if setAnim:
 		WalkingAnimation()
@@ -100,6 +102,12 @@ class NPC (MonoBehaviour):
 		// Debug.Log(i + "attempts to find point needed")
 		SetWaypoint(waypoint)
 		
+		
+	public def Trap():
+		actualForce = 0
+		renderer.enabled = true
+		
 	public def Detect() as bool:
 		audio.Play()
+		
 		return isAndroid

@@ -6,9 +6,9 @@ class SpriteAnimation (MonoBehaviour):
 	public runningAtSpawn as bool = false
 	public frameRate as int
 	frameTime as double
-	public running as bool
+	running as bool
 	currentFrame as int = 0
-	public nextFrameTime as double
+	nextFrameTime as double
 	spriteRen as SpriteRenderer
 
 	def Start ():

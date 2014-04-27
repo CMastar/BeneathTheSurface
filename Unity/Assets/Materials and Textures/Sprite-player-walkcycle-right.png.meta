@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed7339c0f5b7c2b47b7d046fc6ba3dae
+guid: 23f89d38a197ba446b658398d614fd7c
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,75 +41,84 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Sprite-human-walkcycle-complete-spritesheet_0
+    - name: Sprite-player-walkcycle-right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 180
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Sprite-player-walkcycle-right_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 140
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_1
+    - name: Sprite-player-walkcycle-right_7
       rect:
         serializedVersion: 2
-        x: 140
+        x: 180
         y: 0
-        width: 140
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_2
+    - name: Sprite-player-walkcycle-right_8
       rect:
         serializedVersion: 2
-        x: 280
+        x: 360
         y: 0
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 0
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: Sprite-human-walkcycle-complete-spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 980
-        y: 0
-        width: 140
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}

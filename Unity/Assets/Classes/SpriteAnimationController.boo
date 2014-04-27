@@ -14,8 +14,6 @@ class SpriteAnimationController (MonoBehaviour):
 		unless currentAnimation == null:
 			unless currentAnimation.AnimName == animationName: // Don't want to cause weird stop-start of existin animations
 				currentAnimation.StopAnimation()
-				
-		
 		if CheckAnimationName(animationName): // Don't want to cause weird stop-start of existing animations
 			for anim as SpriteAnimation in gameObject.GetComponentsInChildren[of SpriteAnimation]():
 				if anim.AnimName == animationName:
@@ -37,6 +35,5 @@ class SpriteAnimationController (MonoBehaviour):
 			
 	public def PlayAnimation(animationName as string, framerate as double) as bool:
 		flag = PlayAnimation(animationName)
-		if flag:
-			currentAnimation.SetFrameRate(framerate)
+		currentAnimation.SetFrameRate(framerate)
 		return flag
