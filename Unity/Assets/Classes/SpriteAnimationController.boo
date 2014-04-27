@@ -1,13 +1,10 @@
 ﻿import UnityEngine
 
 class SpriteAnimationController (MonoBehaviour): 
-	animations as Hash
 	currentAnimation as SpriteAnimation
 
 	def Start ():
-		animations = Hash()
-		for anim as SpriteAnimation in gameObject.GetComponentsInChildren[of SpriteAnimation]():
-			animations.Add(anim.AnimName, anim)
+		pass
 			
 	
 	def Update ():
@@ -17,10 +14,29 @@ class SpriteAnimationController (MonoBehaviour):
 		unless currentAnimation == null:
 			unless currentAnimation.AnimName == animationName: // Don't want to cause weird stop-start of existin animations
 				currentAnimation.StopAnimation()
-		if animations[animationName] == null:
+				
+		
+		if CheckAnimationName(animationName): // Don't want to cause weird stop-start of existing animations
+			for anim as SpriteAnimation in gameObject.GetComponentsInChildren[of SpriteAnimation]():
+				if anim.AnimName == animationName:
+					currentAnimation = anim
+					currentAnimation.StartAnimation()
+					return true
+			Debug.Log("Could not find animation " + animationName)
 			return false
-		else:
-			unless currentAnimation.AnimName == animationName: // Don't want to cause weird stop-start of existing animations
-				currentAnimation = animations[animationName]
-				currentAnimation.StartAnimation()
+		
+		
+	def CheckAnimationName(animationName) as bool:
+		if currentAnimation == null:
 			return true
+		else:
+			if currentAnimation.AnimName == animationName:
+				return false
+			else:
+				return true
+			
+	public def PlayAnimation(animationName as string, framerate as double) as bool:
+		flag = PlayAnimation(animationName)
+		if flag:
+			currentAnimation.SetFrameRate(framerate)
+		return flag

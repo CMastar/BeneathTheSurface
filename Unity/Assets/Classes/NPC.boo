@@ -9,47 +9,59 @@ class NPC (MonoBehaviour):
 	sideStepTime as double = 0
 	directionVector as Vector3 = Vector3.forward
 	aimingFor as GameObject
+	public animCont as SpriteAnimationController
+	setAnim as bool = false
 	
 	def Start ():
 		actualForce = Random.Range(minForce,maxForce)
 		RandomWaypoint()
+		// animCont = gameObject.GetComponent[of SpriteAnimationController]()
 		
 	
 	def FixedUpdate ():
+		setAnim = false
 		if sideStepTime > 0:
 			sideStepTime = sideStepTime - Time.fixedDeltaTime
 			renderer.material.color = Color.green
+			//WalkingAnimation()
 		else:
 			if sideStepTime <= 0 and sideStepTime != -1:
+				setAnim = true
 				sideStepTime = -1
 				if CheckWaypoint(aimingFor):
-					direction = Quaternion.LookRotation(aimingFor.collider.ClosestPointOnBounds(transform.position) - transform.position)
+					direction = GetDirection()
 				else:
 					RandomWaypoint()
 			directionVector = Vector3.forward
 			renderer.material.color = Color.white
 		rigidbody.AddForce(direction  /* transform.rotation */ * directionVector  * actualForce * Time.fixedDeltaTime, ForceMode.VelocityChange)
-
-	
-	def PickDirection() as Quaternion:
-		// return Quaternion.Euler(0,Random.Range(0,360),0)
-
+		//if setAnim:
+		WalkingAnimation()
 		
-		//transform.LookAt(waypoint.transform)
-		return 
+	def GetDirection() as Quaternion:
+		setAnim = true
+		return Quaternion.LookRotation(aimingFor.collider.ClosestPointOnBounds(transform.position) - transform.position)
+	
+	def WalkingAnimation():
+		fR = ( ( (maxForce + minForce) /2 ) / actualForce) * 10
+		if rigidbody.velocity.x > 0:
+			animCont.PlayAnimation("WalkingRight",fR)
+		else:
+			animCont.PlayAnimation("WalkingLeft",fR)
+
 	
 	def CheckWaypoint(waypointToCheck as GameObject) as bool:
 		if waypointToCheck == null:
-			Debug.Log("Waypoint is null for " + name)
+		//	Debug.Log("Waypoint is null for " + name)
 			return false
 		if Vector3.Distance(waypointToCheck.transform.position, transform.position) < 5:
-			Debug.Log(waypointToCheck.name + " is too close to " + name)
+		//	Debug.Log(waypointToCheck.name + " is too close to " + name)
 			return false
 		obstacles = Physics.RaycastAll(transform.position,Quaternion.LookRotation(waypointToCheck.transform.position - transform.position) * Vector3.forward  , Vector3.Distance(transform.position, waypointToCheck.transform.position) )
 		// Debug.Log(len(obstacles).ToString() + " obstacles for " + name)
 		for hit as RaycastHit in obstacles:
 			if hit.collider.tag == "Terrain":
-				Debug.Log(hit.collider.name + " is in the way of " + name)
+		//		Debug.Log(hit.collider.name + " is in the way of " + name)
 				return false
 		return true
 		
@@ -63,10 +75,11 @@ class NPC (MonoBehaviour):
 			sideStepTime = timeToDodge
 			dodgeDirections = (Vector3.left,Vector3.back, Vector3.right)
 			directionVector = dodgeDirections[Random.Range(0,3)]
+			setAnim = true
 			
 	public def SetWaypoint(waypoint as GameObject):
 		aimingFor = waypoint
-		direction = Quaternion.LookRotation(waypoint.collider.ClosestPointOnBounds(transform.position) - transform.position)
+		direction = GetDirection()
 		// Debug.Log(name + " is heading for " + waypoint.name)
 			
 	public def RandomWaypoint():

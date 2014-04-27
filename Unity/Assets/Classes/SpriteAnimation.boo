@@ -6,15 +6,15 @@ class SpriteAnimation (MonoBehaviour):
 	public runningAtSpawn as bool = false
 	public frameRate as int
 	frameTime as double
-	running as bool
+	public running as bool
 	currentFrame as int = 0
-	nextFrameTime as double
+	public nextFrameTime as double
 	spriteRen as SpriteRenderer
 
 	def Start ():
 		if runningAtSpawn:
 			StartAnimation()
-		frameTime = 1.0 / frameRate
+		SetFrameRate(frameRate)
 		spriteRen = gameObject.GetComponent[of SpriteRenderer]()
 	
 	def Update ():
@@ -31,9 +31,14 @@ class SpriteAnimation (MonoBehaviour):
 			
 
 	def StartAnimation():
-		running = true
-		currentFrame = 0
-		nextFrameTime = Time.time
+		unless running:
+			running = true
+			currentFrame = 0
+			nextFrameTime = Time.time
 		
 	def StopAnimation():
 		running = false
+		
+	public def SetFrameRate(fR as double):
+		frameTime = 1.0 / fR
+		frameRate = fR
