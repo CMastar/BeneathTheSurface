@@ -12,6 +12,7 @@ class NPC (MonoBehaviour):
 	aimingFor as GameObject
 	public animCont as SpriteAnimationController
 	setAnim as bool = false
+	stopRunning as single
 
 	
 	def Start ():
@@ -23,6 +24,8 @@ class NPC (MonoBehaviour):
 	
 	def FixedUpdate ():
 		setAnim = false
+		if actualForce > maxForce and Time.time > stopRunning:
+			actualForce = Random.Range(minForce,maxForce)
 		if sideStepTime > 0:
 			sideStepTime = sideStepTime - Time.fixedDeltaTime
 			// renderer.material.color = Color.green
@@ -102,6 +105,13 @@ class NPC (MonoBehaviour):
 		// Debug.Log(i + "attempts to find point needed")
 		SetWaypoint(waypoint)
 		
+	public def Run(timetoRun as single):
+		if timetoRun == 0:
+			stopRunning = Mathf.Infinity
+		else:
+			stopRunning = Time.time + timetoRun
+		actualForce = 2 * maxForce
+		
 		
 	public def Trap():
 		actualForce = 0
@@ -109,5 +119,8 @@ class NPC (MonoBehaviour):
 		
 	public def Detect() as bool:
 		audio.Play()
-		
+		if isAndroid:
+			gameObject.GetComponent[of Android]().Detected()
+		else:
+			Run(0.5)
 		return isAndroid
