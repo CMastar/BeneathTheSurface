@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Classes\ClickSprite.boo" />
      <Compile Include="Assets\Classes\GroupSpawner.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
+     <Compile Include="Assets\Classes\SpriteAnimation.boo" />
+     <Compile Include="Assets\Classes\SpriteAnimationController.boo" />
      <Compile Include="Assets\Classes\Waypoint.boo" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
   </ItemGroup>
