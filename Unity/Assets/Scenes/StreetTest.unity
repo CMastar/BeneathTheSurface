@@ -438,6 +438,7 @@ GameObject:
   - 65: {fileID: 180093973}
   - 23: {fileID: 180093972}
   - 114: {fileID: 180093971}
+  - 114: {fileID: 180093976}
   m_Layer: 0
   m_Name: Waypoint9
   m_TagString: Waypoints
@@ -511,6 +512,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &180093976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 998512119}
+  m_GameObject: {fileID: 180093970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &180528078
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +536,7 @@ GameObject:
   - 33: {fileID: 180528082}
   - 23: {fileID: 180528080}
   - 114: {fileID: 180528079}
+  - 114: {fileID: 180528081}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -568,6 +583,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &180528081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 813964609}
+  m_GameObject: {fileID: 180528078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &180528082
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -756,6 +784,8 @@ GameObject:
   - 65: {fileID: 281572551}
   - 23: {fileID: 281572550}
   - 114: {fileID: 281572549}
+  - 114: {fileID: 281572555}
+  - 114: {fileID: 281572554}
   m_Layer: 0
   m_Name: Waypoint4
   m_TagString: Waypoints
@@ -829,6 +859,31 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &281572554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281572548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
+--- !u!114 &281572555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 271614343}
+  m_GameObject: {fileID: 281572548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &300694006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1122,7 @@ GameObject:
   - 33: {fileID: 564582626}
   - 23: {fileID: 564582624}
   - 114: {fileID: 564582623}
+  - 114: {fileID: 564582625}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -1113,6 +1169,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &564582625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1201482341}
+  m_GameObject: {fileID: 564582622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &564582626
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1344,6 +1413,7 @@ GameObject:
   - 33: {fileID: 711414634}
   - 23: {fileID: 711414632}
   - 114: {fileID: 711414631}
+  - 114: {fileID: 711414633}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -1390,6 +1460,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &711414633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 24851024}
+  m_GameObject: {fileID: 711414630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &711414634
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1421,6 +1504,7 @@ GameObject:
   - 65: {fileID: 798850016}
   - 23: {fileID: 798850015}
   - 114: {fileID: 798850014}
+  - 114: {fileID: 798850019}
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Waypoints
@@ -1494,6 +1578,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &798850019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 1586209755}
+  m_GameObject: {fileID: 798850013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &811496177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1603,7 @@ GameObject:
   - 65: {fileID: 811496180}
   - 23: {fileID: 811496179}
   - 114: {fileID: 811496178}
+  - 114: {fileID: 811496183}
   m_Layer: 0
   m_Name: Waypoint7
   m_TagString: Waypoints
@@ -1579,6 +1677,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &811496183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 265814559}
+  m_GameObject: {fileID: 811496177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1001 &813964609
 Prefab:
   m_ObjectHideFlags: 0
@@ -1687,6 +1798,7 @@ GameObject:
   - 65: {fileID: 868784733}
   - 23: {fileID: 868784732}
   - 114: {fileID: 868784731}
+  - 114: {fileID: 868784736}
   m_Layer: 0
   m_Name: Waypoint7
   m_TagString: Waypoints
@@ -1760,6 +1872,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &868784736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 426010507}
+  m_GameObject: {fileID: 868784730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &878450418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1966,7 @@ GameObject:
   - 65: {fileID: 879628487}
   - 23: {fileID: 879628486}
   - 114: {fileID: 879628485}
+  - 114: {fileID: 879628490}
   m_Layer: 0
   m_Name: Waypoint3
   m_TagString: Waypoints
@@ -1914,6 +2040,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &879628490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 81846630}
+  m_GameObject: {fileID: 879628484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &923151507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +2065,7 @@ GameObject:
   - 65: {fileID: 923151510}
   - 23: {fileID: 923151509}
   - 114: {fileID: 923151508}
+  - 114: {fileID: 923151513}
   m_Layer: 0
   m_Name: Waypoint2
   m_TagString: Waypoints
@@ -1999,6 +2139,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &923151513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214449017}
+  m_GameObject: {fileID: 923151507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1001 &998512119
 Prefab:
   m_ObjectHideFlags: 0
@@ -2124,6 +2277,7 @@ GameObject:
   - 65: {fileID: 1161506387}
   - 23: {fileID: 1161506386}
   - 114: {fileID: 1161506385}
+  - 114: {fileID: 1161506390}
   m_Layer: 0
   m_Name: Waypoint7
   m_TagString: Waypoints
@@ -2197,6 +2351,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1161506390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 1611982723}
+  m_GameObject: {fileID: 1161506384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1001 &1190542075
 Prefab:
   m_ObjectHideFlags: 0
@@ -2316,6 +2483,7 @@ GameObject:
   - 33: {fileID: 1336010650}
   - 23: {fileID: 1336010648}
   - 114: {fileID: 1336010647}
+  - 114: {fileID: 1336010649}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -2362,6 +2530,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &1336010649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1873077579}
+  m_GameObject: {fileID: 1336010646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &1336010650
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2461,6 +2642,7 @@ GameObject:
   - 33: {fileID: 1375041177}
   - 23: {fileID: 1375041175}
   - 114: {fileID: 1375041174}
+  - 114: {fileID: 1375041176}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -2507,6 +2689,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &1375041176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 841568652}
+  m_GameObject: {fileID: 1375041173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &1375041177
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3100,6 +3295,7 @@ GameObject:
   - 65: {fileID: 1730061767}
   - 23: {fileID: 1730061766}
   - 114: {fileID: 1730061765}
+  - 114: {fileID: 1730061770}
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Waypoints
@@ -3173,6 +3369,19 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1730061770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 86c8c0d20903ace4ea2fe0bf30f7a886,
+    type: 2}
+  m_PrefabInternal: {fileID: 1190542075}
+  m_GameObject: {fileID: 1730061764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!1 &1787270937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,6 +3659,7 @@ GameObject:
   - 33: {fileID: 1926630860}
   - 23: {fileID: 1926630858}
   - 114: {fileID: 1926630857}
+  - 114: {fileID: 1926630859}
   m_Layer: 0
   m_Name: CrowdSpawner
   m_TagString: Untagged
@@ -3496,6 +3706,19 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &1926630859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b49a172dfe95b8142be8ba82fcb302c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1715174954}
+  m_GameObject: {fileID: 1926630856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97461c39db4aca4fb5bab87db223497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VisibleAtRuntime: 0
 --- !u!33 &1926630860
 MeshFilter:
   m_ObjectHideFlags: 0

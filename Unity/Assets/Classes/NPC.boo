@@ -43,7 +43,7 @@ class NPC (MonoBehaviour):
 		return Quaternion.LookRotation(aimingFor.collider.ClosestPointOnBounds(transform.position) - transform.position)
 	
 	def WalkingAnimation():
-		fR = ( ( (maxForce + minForce) /2 ) / actualForce) * 10
+		fR = ( actualForce / ( (maxForce + minForce) /2 ) ) * 10
 		if rigidbody.velocity.x > 0:
 			animCont.PlayAnimation("WalkingRight",fR)
 		else:

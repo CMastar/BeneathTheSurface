@@ -50,6 +50,7 @@
      <Compile Include="Assets\Classes\GroupSpawner.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
+     <Compile Include="Assets\Classes\RuntimeVisibility.boo" />
      <Compile Include="Assets\Classes\SpriteAnimation.boo" />
      <Compile Include="Assets\Classes\SpriteAnimationController.boo" />
      <Compile Include="Assets\Classes\Waypoint.boo" />
