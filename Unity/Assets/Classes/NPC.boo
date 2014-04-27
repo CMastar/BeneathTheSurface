@@ -11,6 +11,7 @@ class NPC (MonoBehaviour):
 	aimingFor as GameObject
 	public animCont as SpriteAnimationController
 	setAnim as bool = false
+	public isAndroid as bool = false
 	
 	def Start ():
 		actualForce = Random.Range(minForce,maxForce)
@@ -98,3 +99,7 @@ class NPC (MonoBehaviour):
 				valid = true
 		// Debug.Log(i + "attempts to find point needed")
 		SetWaypoint(waypoint)
+		
+	public def Detect() as bool:
+		audio.Play()
+		return isAndroid

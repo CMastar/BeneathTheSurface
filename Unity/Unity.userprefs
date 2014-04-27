@@ -1,16 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\PlayerItem.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\AndroidDetector.boo">
     <Files>
       <File FileName="Assets\Classes\PlayerMove.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\NPC.boo" Line="48" Column="45" />
+      <File FileName="Assets\Classes\NPC.boo" Line="103" Column="29" />
       <File FileName="Assets\Classes\GroupSpawner.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimation.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\ClickSprite.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimationController.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Waypoint.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\RuntimeVisibility.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\PlayerItem.boo" Line="7" Column="1" />
+      <File FileName="Assets\Classes\PlayerItem.boo" Line="4" Column="9" />
+      <File FileName="Assets\Classes\EquipmentHandler.boo" Line="13" Column="38" />
+      <File FileName="Assets\Classes\AndroidDetector.boo" Line="10" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

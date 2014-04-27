@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Classes\ClickSprite.boo" />
+     <Compile Include="Assets\Classes\AndroidDetector.boo" />
+     <Compile Include="Assets\Classes\EquipmentHandler.boo" />
      <Compile Include="Assets\Classes\GroupSpawner.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
+     <Compile Include="Assets\Classes\PlayerItem.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
      <Compile Include="Assets\Classes\RuntimeVisibility.boo" />
      <Compile Include="Assets\Classes\SpriteAnimation.boo" />
