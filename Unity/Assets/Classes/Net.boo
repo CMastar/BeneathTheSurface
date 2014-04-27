@@ -15,6 +15,8 @@ class Net (MonoBehaviour):
 		if Time.time < fireTime + expansionTime:
 			gameObject.GetComponent[of BoxCollider]().center.z = Mathf.Lerp(0,range,(Time.time - fireTime) / expansionTime)
 			tracker.transform.localPosition.z = Mathf.Lerp(0,range,(Time.time - fireTime) / expansionTime)
+		else:
+			collider.enabled = false
 
 	public def SetNetgun(launcher as NetGun):
 		gunThatLaunched = launcher

@@ -35,6 +35,7 @@ GameObject:
   - 82: {fileID: 8200000}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: CrowdRobot
   m_TagString: Untagged
@@ -71,13 +72,13 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fca2f0e1f47237b49a377cf210bc21ac, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -92,7 +93,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 431d2146ca5492041a7268848aa2ba3d, type: 3}
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -178,6 +179,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadc0aaff5e181540a3b883a741e772d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EscapePoint: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,8 +214,6 @@ MonoBehaviour:
   - {fileID: 21300014, guid: 12b4e9aa63a307d4f899899a9a7f92e8, type: 3}
   runningAtSpawn: 1
   frameRate: 10
-  running: 0
-  nextFrameTime: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,8 +237,6 @@ MonoBehaviour:
   - {fileID: 21300014, guid: 6c30e65126cccec4dbae2e6aebb7c753, type: 3}
   runningAtSpawn: 0
   frameRate: 10
-  running: 0
-  nextFrameTime: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,11 +259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7037d5e731983724b9c30ff5e95246b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAndroid: 1
   minForce: 8
   maxForce: 16
   timeToDodge: .44999998807907104
   animCont: {fileID: 11400006}
-  isAndroid: 1
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

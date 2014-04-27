@@ -8,7 +8,7 @@ class NetGun (PlayerItem):
 		if loaded:
 			net as GameObject = GameObject.Instantiate(netObject,transform.position,Quaternion.LookRotation(direction))
 			net.GetComponent[of Net]().SetNetgun(self)
-			// loaded = false
+			loaded = false
 		
 	public def Reload() as bool:
 		if loaded:
