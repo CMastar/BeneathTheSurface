@@ -1077,6 +1077,7 @@ MonoBehaviour:
   - {fileID: 21300014, guid: ef31965f69d670e498313f291b375a19, type: 3}
   runningAtSpawn: 0
   frameRate: 10
+  loop: 1
 --- !u!114 &222583564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,6 +1102,7 @@ MonoBehaviour:
   - {fileID: 21300014, guid: 23f89d38a197ba446b658398d614fd7c, type: 3}
   runningAtSpawn: 0
   frameRate: 10
+  loop: 1
 --- !u!212 &222583565
 SpriteRenderer:
   m_ObjectHideFlags: 0
