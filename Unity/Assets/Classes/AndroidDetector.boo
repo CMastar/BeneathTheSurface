@@ -10,8 +10,8 @@ class AndroidDetector (PlayerItem):
 		if Time.time > readyTime:
 			readyTime = Time.time + coolDown
 			rayInfo as RaycastHit
-			if Physics.Raycast(transform.position, direction, rayInfo, detectorRange):
-				Debug.Log("Adroid Detector found: " + rayInfo.collider.name)
+			if Physics.SphereCast(transform.position,0.5, direction, rayInfo, detectorRange):
+				// Debug.Log("Adroid Detector found: " + rayInfo.collider.name)
 				npc as NPC = rayInfo.collider.GetComponent[of NPC]()
 				unless npc == null:
 					npc.Detect()

@@ -20,7 +20,7 @@ class SpriteAnimationController (MonoBehaviour):
 					currentAnimation = anim
 					currentAnimation.StartAnimation()
 					return true
-			Debug.Log("Could not find animation " + animationName)
+			// Debug.Log("Could not find animation " + animationName)
 			return false
 		
 		
@@ -35,5 +35,6 @@ class SpriteAnimationController (MonoBehaviour):
 			
 	public def PlayAnimation(animationName as string, framerate as double) as bool:
 		flag = PlayAnimation(animationName)
-		currentAnimation.SetFrameRate(framerate)
+		unless currentAnimation == null:
+			currentAnimation.SetFrameRate(framerate)
 		return flag

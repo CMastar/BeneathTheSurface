@@ -5,9 +5,9 @@ class RandomBodyAssembler (MonoBehaviour):
 	public torsos as (GameObject)
 	public legs as (GameObject)
 	
-	headPos = Vector3(0,0,0)
-	torsoPos = Vector3(0,0,0)
-	legPos = Vector3(0,0,0)
+	headPos = Vector3(0,1.17,-0.15)
+	torsoPos = Vector3(0,0.507,-0.15)
+	legPos = Vector3(0,0,-0.15)
 	
 
 	def Start ():

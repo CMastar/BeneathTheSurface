@@ -61,7 +61,7 @@ class NPC (MonoBehaviour):
 			part.PlayAnimation(animName,fR)
 
 	
-	def CheckWaypoint(waypointToCheck as GameObject) as bool:
+	public def CheckWaypoint(waypointToCheck as GameObject) as bool:
 		if waypointToCheck == null:
 		//	Debug.Log("Waypoint is null for " + name)
 			return false
