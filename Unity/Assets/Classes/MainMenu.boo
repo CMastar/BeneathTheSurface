@@ -7,9 +7,10 @@ class MainMenu (MonoBehaviour):
 	public instructionText as TextAsset
 	
 	def OnGUI():
-		GUI.BeginGroup(Rect((Screen.width - menuW) / 2,Screen.height / 2,menuW,menuH))
+		GUI.BeginGroup(Rect((Screen.width - menuW) / 2,200,menuW,menuH))
 		if showInstructions:
-			GUI.Box(Rect(0,0,Screen.width,menuH - 60),instructionText.text)
+			GUI.Box(Rect(0,0,menuW,menuH - 60),"")
+			GUI.Label(Rect(0,0,menuW,menuH - 60),instructionText.text)
 			if GUI.Button(Rect(0,menuH - 50,menuW,50),"Back to menu"):
 				showInstructions = false
 		else:

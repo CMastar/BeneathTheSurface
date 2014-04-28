@@ -1,7 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\NPC.boo">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\MainMenu.boo">
     <Files>
+      <File FileName="Assets\Classes\MainMenu.boo" Line="4" Column="25" />
       <File FileName="Assets\Classes\NPC.boo" Line="115" Column="2" />
       <File FileName="Assets\Classes\GroupSpawner.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimation.boo" Line="1" Column="1" />
@@ -11,12 +12,12 @@
       <File FileName="Assets\Classes\PlayerItem.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\EquipmentHandler.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\AndroidDetector.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\NetGun.boo" Line="18" Column="15" />
+      <File FileName="Assets\Classes\NetGun.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Net.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Android.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\GameState.boo" Line="32" Column="10" />
+      <File FileName="Assets\Classes\GameState.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Megaphone.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\RandomBodyAssembler.boo" Line="11" Column="27" />
+      <File FileName="Assets\Classes\RandomBodyAssembler.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\PlayerMove.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\NetRelease.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\MainMenu.boo" Line="1" Column="1" />
