@@ -160,11 +160,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heads:
   - {fileID: 100000, guid: de0813fe36a944242816690114c00caa, type: 2}
+  - {fileID: 100000, guid: 9c6d8c50b68da62448f3e29d1fafc62a, type: 2}
+  - {fileID: 100000, guid: b534cbf76a56b7945b36d6d4d2700cb3, type: 2}
+  - {fileID: 100000, guid: 8311878e15c9a5649b0b9897c1688cf1, type: 2}
+  - {fileID: 100000, guid: 42e35784d5b36d44aacb450a948e16fd, type: 2}
+  - {fileID: 100000, guid: bc1260c007e75754d86c2e5cb668779c, type: 2}
+  - {fileID: 100000, guid: aa3e0f1d8be4829498e1f8bacc8ac524, type: 2}
+  - {fileID: 100000, guid: 5dd035f319ce6bf4ab2595fdd8082853, type: 2}
+  - {fileID: 100000, guid: 0293c62c5d88e3249a3e5aeb76a89f0f, type: 2}
+  - {fileID: 100000, guid: e6d22fcf36bca944eac71cd622de2042, type: 2}
   torsos:
   - {fileID: 100000, guid: 81c9c0f7d17b2754aa1cfdf4e3139d2d, type: 2}
   - {fileID: 100000, guid: fbbabecef1de75f448d931f1af2f23bc, type: 2}
+  - {fileID: 100000, guid: d67ca7efdc01ffe45b689cb5a9574cd5, type: 2}
+  - {fileID: 100000, guid: 841b2eac4480eb14c9a770854a57cbdc, type: 2}
+  - {fileID: 100000, guid: ea62cce0163973a4f9972a49b87c8507, type: 2}
   legs:
   - {fileID: 100000, guid: e0fde21abe7ae1f4c9d7361585e82f7a, type: 2}
+  - {fileID: 100000, guid: 7c465c545bb7c2349896a3911c630a58, type: 2}
+  - {fileID: 100000, guid: eee4a6f0a3cedd64484b103ad393293e, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 0
