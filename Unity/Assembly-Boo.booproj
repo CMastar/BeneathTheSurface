@@ -49,10 +49,13 @@
      <Compile Include="Assets\Classes\Android.boo" />
      <Compile Include="Assets\Classes\AndroidDetector.boo" />
      <Compile Include="Assets\Classes\EquipmentHandler.boo" />
+     <Compile Include="Assets\Classes\GameState.boo" />
      <Compile Include="Assets\Classes\GroupSpawner.boo" />
+     <Compile Include="Assets\Classes\Megaphone.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
      <Compile Include="Assets\Classes\Net.boo" />
      <Compile Include="Assets\Classes\NetGun.boo" />
+     <Compile Include="Assets\Classes\NewBehaviourScript.boo" />
      <Compile Include="Assets\Classes\PlayerItem.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
      <Compile Include="Assets\Classes\RuntimeVisibility.boo" />

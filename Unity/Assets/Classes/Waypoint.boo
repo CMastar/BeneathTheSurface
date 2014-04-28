@@ -10,4 +10,6 @@ class Waypoint (MonoBehaviour):
 		
 	def OnTriggerEnter(collided as Collider):
 		// Debug.Log(collided.name + " entered " + name)
-		collided.gameObject.GetComponent[of NPC]().RandomWaypoint()
+		npc = collided.gameObject.GetComponent[of NPC]()
+		unless npc == null:
+			npc.RandomWaypoint()
