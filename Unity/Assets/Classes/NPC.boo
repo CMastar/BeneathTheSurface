@@ -68,7 +68,7 @@ class NPC (MonoBehaviour):
 		if Vector3.Distance(waypointToCheck.transform.position, transform.position) < 5:
 		//	Debug.Log(waypointToCheck.name + " is too close to " + name)
 			return false
-		obstacles = Physics.RaycastAll(transform.position,Quaternion.LookRotation(waypointToCheck.transform.position - transform.position) * Vector3.forward  , Vector3.Distance(transform.position, waypointToCheck.transform.position) )
+		obstacles = Physics.SphereCastAll(transform.position,0.5,Quaternion.LookRotation(waypointToCheck.transform.position - transform.position) * Vector3.forward  , Vector3.Distance(transform.position, waypointToCheck.transform.position) )
 		// Debug.Log(len(obstacles).ToString() + " obstacles for " + name)
 		for hit as RaycastHit in obstacles:
 			if hit.collider.tag == "Terrain":

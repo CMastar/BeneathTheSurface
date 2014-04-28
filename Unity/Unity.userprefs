@@ -1,16 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\RandomBodyAssembler.boo">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js">
     <Files>
-      <File FileName="Assets\Classes\NPC.boo" Line="128" Column="20" />
+      <File FileName="Assets\Classes\NPC.boo" Line="71" Column="60" />
       <File FileName="Assets\Classes\GroupSpawner.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimation.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimationController.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Waypoint.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\RuntimeVisibility.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\PlayerItem.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\EquipmentHandler.boo" Line="51" Column="24" />
-      <File FileName="Assets\Classes\AndroidDetector.boo" Line="10" Column="1" />
+      <File FileName="Assets\Classes\EquipmentHandler.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\AndroidDetector.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\NetGun.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Net.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Android.boo" Line="1" Column="1" />
@@ -18,7 +18,9 @@
       <File FileName="Assets\Classes\Megaphone.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\RandomBodyAssembler.boo" Line="18" Column="1" />
       <File FileName="Assets\Classes\PlayerMove.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\NetRelease.boo" Line="13" Column="5" />
+      <File FileName="Assets\Classes\NetRelease.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\MainMenu.boo" Line="26" Column="17" />
+      <File FileName="Assets\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
