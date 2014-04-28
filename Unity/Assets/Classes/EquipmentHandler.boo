@@ -33,7 +33,7 @@ class EquipmentHandler (MonoBehaviour):
 			
 		if Input.GetButton("UseItem"):
 			unless horz == 0 and  vert == 0:
-				if Mathf.Abs(horz) > vert:
+				if Mathf.Abs(horz) > Mathf.Abs(vert):
 					if horz > 0:
 						dir = Vector3.right
 					else:

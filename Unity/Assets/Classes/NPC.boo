@@ -124,6 +124,13 @@ class NPC (MonoBehaviour):
 		if isAndroid:
 			GameObject.Find("LevelControl").GetComponent[of GameState]().AndroidCaptured(gameObject)
 			
+	public def Release() as bool:
+		if actualForce == 0:
+			renderer.enabled = false
+			return true
+		else:
+			return false
+			
 	def OnTriggerEnter(trigger as Collider):
 		if trigger.tag == "Waypoints":
 			RandomWaypoint()
