@@ -25,5 +25,6 @@ class Net (MonoBehaviour):
 		Debug.Log("Net hit " + hit.collider.name)
 		NPCHit as NPC = hit.GetComponent[of NPC]()
 		unless NPCHit == null:
-			NPCHit.Trap() 
+			NPCHit.Trap()
+			collider.enabled = false
 		

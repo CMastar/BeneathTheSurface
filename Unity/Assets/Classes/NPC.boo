@@ -26,6 +26,7 @@ class NPC (MonoBehaviour):
 		setAnim = false
 		if actualForce > maxForce and Time.time > stopRunning:
 			actualForce = Random.Range(minForce,maxForce)
+			direction = GetDirection()
 		if sideStepTime > 0:
 			sideStepTime = sideStepTime - Time.fixedDeltaTime
 			// renderer.material.color = Color.green
@@ -40,7 +41,7 @@ class NPC (MonoBehaviour):
 					RandomWaypoint()
 			directionVector = Vector3.forward
 			// renderer.material.color = Color.white
-		rigidbody.AddForce(direction  /* transform.rotation */ * directionVector  * actualForce * Time.fixedDeltaTime, ForceMode.VelocityChange)
+		rigidbody.AddForce(direction * directionVector  * actualForce * Time.fixedDeltaTime, ForceMode.VelocityChange)
 		//if setAnim:
 		WalkingAnimation()
 		
@@ -116,6 +117,22 @@ class NPC (MonoBehaviour):
 	public def Trap():
 		actualForce = 0
 		renderer.enabled = true
+		if isAndroid:
+			GameObject.Find("LevelControl").GetComponent[of GameState]().AndroidCaptured(gameObject)
+			
+	def OnTriggerEnter(trigger as Collider):
+		if trigger.tag == "Waypoints":
+			RandomWaypoint()
+		if trigger.tag == "Escape":
+			Escaped()
+			
+	def Escaped():
+		if isAndroid:
+			GameObject.Find("LevelControl").GetComponent[of GameState]().AndroidEscaped(gameObject)
+			
+	public def RunFrom(place as Vector3, time as single):
+		direction = Quaternion.Inverse(Quaternion.LookRotation(place - transform.position))
+		Run(time)
 		
 	public def Detect() as bool:
 		audio.Play()
