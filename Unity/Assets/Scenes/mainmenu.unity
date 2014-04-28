@@ -943,9 +943,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1d87e96339a5c4b8e2668d8b2ad844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuW: 400
+  menuW: 600
   menuH: 400
-  instructionText: {fileID: 0}
+  instructionText: {fileID: 4900000, guid: aa7038f4a61dcc84a86c660006d1c6de, type: 3}
 --- !u!1 &842522254
 GameObject:
   m_ObjectHideFlags: 0
