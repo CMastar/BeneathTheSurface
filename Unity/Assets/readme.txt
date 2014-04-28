@@ -29,4 +29,6 @@ Use the CUTTING TOOL to free members of the public and retrieve your net.
 How to win:
 -----------
 
-Locate the android and capture it in your net to win!
+Locate the android and capture it in your net to WIN!
+
+If discovered, the android may make a break for the exit. If it ecapes, YOU LOSE!
