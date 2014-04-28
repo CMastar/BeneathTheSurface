@@ -6,9 +6,9 @@ class RandomBodyAssembler (MonoBehaviour):
 	public legs as (GameObject)
 	public hitSounds as (AudioClip)
 	
-	headPos = Vector3(0,1.07,-0.15)
-	torsoPos = Vector3(0,0.507,-0.15)
-	legPos = Vector3(0,0,-0.15)
+	headPos = Vector3(0,1.07,-0.2)
+	torsoPos = Vector3(0,0.507,-0.2)
+	legPos = Vector3(0,0,-0.2)
 	
 
 	def Start ():
