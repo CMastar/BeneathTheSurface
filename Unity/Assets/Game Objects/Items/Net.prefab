@@ -108,8 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5985fe788d538d44fb871d0aa3ca8acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 2
-  expansionTime: 1
+  range: 4
+  expansionTime: .5
   tracker: {fileID: 100002}
 --- !u!1001 &100100000
 Prefab:

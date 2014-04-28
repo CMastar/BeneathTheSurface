@@ -26,10 +26,10 @@ class EquipmentHandler (MonoBehaviour):
 		horz = Input.GetAxis('Horizontal')
 		vert = Input.GetAxis('Vertical')
 		if horz > 0:
-			OrientateItems(180)
+			OrientateItems(0)
 		else:
 			if horz < 0:
-				OrientateItems(0)
+				OrientateItems(180)
 			
 		if Input.GetButton("UseItem"):
 			unless horz == 0 and  vert == 0:

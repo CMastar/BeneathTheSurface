@@ -178,6 +178,13 @@ MonoBehaviour:
   - {fileID: 100000, guid: e0fde21abe7ae1f4c9d7361585e82f7a, type: 2}
   - {fileID: 100000, guid: 7c465c545bb7c2349896a3911c630a58, type: 2}
   - {fileID: 100000, guid: eee4a6f0a3cedd64484b103ad393293e, type: 2}
+  hitSounds:
+  - {fileID: 8300000, guid: f0beb65e1e0db024fb1a9a8c6d53e3b1, type: 3}
+  - {fileID: 8300000, guid: e3e0de22d3890bd4e8f52efc4e7c9cbf, type: 3}
+  - {fileID: 8300000, guid: 96649a2fb39bf6a46ace6127b4472d22, type: 3}
+  - {fileID: 8300000, guid: e3ac53dd52abb6f4180639d17d35b1e0, type: 3}
+  - {fileID: 8300000, guid: 46cb7e1f0505fb6409778fc7913e02ba, type: 3}
+  - {fileID: 8300000, guid: b9bbb6c0f64c48346ba3e872ee06106f, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

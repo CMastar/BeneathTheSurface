@@ -51,6 +51,7 @@
      <Compile Include="Assets\Classes\EquipmentHandler.boo" />
      <Compile Include="Assets\Classes\GameState.boo" />
      <Compile Include="Assets\Classes\GroupSpawner.boo" />
+     <Compile Include="Assets\Classes\MainMenu.boo" />
      <Compile Include="Assets\Classes\Megaphone.boo" />
      <Compile Include="Assets\Classes\NPC.boo" />
      <Compile Include="Assets\Classes\Net.boo" />
