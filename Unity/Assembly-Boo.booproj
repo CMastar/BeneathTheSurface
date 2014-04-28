@@ -58,6 +58,7 @@
      <Compile Include="Assets\Classes\NewBehaviourScript.boo" />
      <Compile Include="Assets\Classes\PlayerItem.boo" />
      <Compile Include="Assets\Classes\PlayerMove.boo" />
+     <Compile Include="Assets\Classes\RandomBodyAssembler.boo" />
      <Compile Include="Assets\Classes\RuntimeVisibility.boo" />
      <Compile Include="Assets\Classes\SpriteAnimation.boo" />
      <Compile Include="Assets\Classes\SpriteAnimationController.boo" />

@@ -10,9 +10,9 @@ class NPC (MonoBehaviour):
 	sideStepTime as double = 0
 	directionVector as Vector3 = Vector3.forward
 	aimingFor as GameObject
-	public animCont as SpriteAnimationController
 	setAnim as bool = false
 	stopRunning as single
+	bodyPartAnimations as (SpriteAnimationController)
 
 	
 	def Start ():
@@ -50,11 +50,15 @@ class NPC (MonoBehaviour):
 		return Quaternion.LookRotation(aimingFor.collider.ClosestPointOnBounds(transform.position) - transform.position)
 	
 	def WalkingAnimation():
+		if bodyPartAnimations == null:
+			bodyPartAnimations = gameObject.GetComponentsInChildren[of SpriteAnimationController]()
 		fR = ( actualForce / ( (maxForce + minForce) /2 ) ) * 10
 		if rigidbody.velocity.x > 0:
-			animCont.PlayAnimation("WalkingRight",fR)
+			animName = "WalkingRight"
 		else:
-			animCont.PlayAnimation("WalkingLeft",fR)
+			animName = "WalkingLeft"
+		for part in bodyPartAnimations:
+			part.PlayAnimation(animName,fR)
 
 	
 	def CheckWaypoint(waypointToCheck as GameObject) as bool:

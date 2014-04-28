@@ -24,9 +24,9 @@ class PlayerMove (MonoBehaviour):
 		else:
 			rigidbody.MovePosition(transform.position + Vector3.forward * forceToUse * Time.fixedDeltaTime * Input.GetAxis('Vertical') + Vector3.right * forceToUse * Time.fixedDeltaTime * Input.GetAxis('Horizontal'))
 		
-		 fR = (Mathf.Abs(rigidbody.velocity.x) / 5) * 10
+		//fR = (Mathf.Abs(rigidbody.velocity.x) / 5) * 10
 		//Debug.Log((Mathf.Abs(rigidbody.velocity.x).ToString()))
-		//fR = 10
+		fR = 10
 		if rigidbody.velocity.x > 0:
 			animController.PlayAnimation("WalkingRight",fR)
 		else:
