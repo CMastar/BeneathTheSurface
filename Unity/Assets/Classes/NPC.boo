@@ -12,7 +12,7 @@ class NPC (MonoBehaviour):
 	aimingFor as GameObject
 	setAnim as bool = false
 	stopRunning as single
-	bodyPartAnimations as (SpriteAnimationController)
+	public bodyPartAnimations as (SpriteAnimationController)
 
 	
 	def Start ():
@@ -50,7 +50,7 @@ class NPC (MonoBehaviour):
 		return Quaternion.LookRotation(aimingFor.collider.ClosestPointOnBounds(transform.position) - transform.position)
 	
 	def WalkingAnimation():
-		if bodyPartAnimations == null:
+		if bodyPartAnimations == null or len(bodyPartAnimations) == 0:
 			bodyPartAnimations = gameObject.GetComponentsInChildren[of SpriteAnimationController]()
 		fR = ( actualForce / ( (maxForce + minForce) /2 ) ) * 10
 		if rigidbody.velocity.x > 0:
