@@ -12,4 +12,5 @@ class Android (MonoBehaviour):
 	public def Detected():
 		npc as NPC = gameObject.GetComponent[of NPC]()
 		npc.SetWaypoint(FindEscapePoint(npc))
+		npc.escaping = true
 		npc.Run(0)

@@ -12,6 +12,7 @@ class NPC (MonoBehaviour):
 	aimingFor as GameObject
 	setAnim as bool = false
 	stopRunning as single
+	public escaping as bool = false
 	public bodyPartAnimations as (SpriteAnimationController)
 
 	
@@ -128,13 +129,15 @@ class NPC (MonoBehaviour):
 	public def Release() as bool:
 		if actualForce == 0:
 			renderer.enabled = false
+			actualForce = Random.Range(minForce,maxForce)
 			return true
 		else:
 			return false
 			
 	def OnTriggerEnter(trigger as Collider):
 		if trigger.tag == "Waypoints":
-			RandomWaypoint()
+			unless escaping:
+				RandomWaypoint()
 		if trigger.tag == "Escape":
 			Escaped()
 			

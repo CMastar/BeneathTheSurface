@@ -5,6 +5,7 @@ class SpriteAnimation (MonoBehaviour):
 	public Frames as (Sprite)
 	public runningAtSpawn as bool = false
 	public frameRate as int
+	public loop as bool = true
 	frameTime as double
 	running as bool
 	currentFrame as int = 0
@@ -24,7 +25,10 @@ class SpriteAnimation (MonoBehaviour):
 				nextFrameTime = nextFrameTime + frameTime * frameStep
 				currentFrame = currentFrame + frameStep
 				if currentFrame > (len(Frames) - 1):
-					currentFrame = currentFrame - len(Frames)
+					if loop:
+						currentFrame = currentFrame - len(Frames)
+					else:
+						currentFrame = len(Frames) - 1
 				spriteRen.sprite = Frames[currentFrame]
 					
 				

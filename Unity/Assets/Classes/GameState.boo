@@ -5,6 +5,7 @@ class GameState (MonoBehaviour):
 	defeat as bool = false
 	public boxW as int = 400
 	public boxH as int = 300
+	public androidSound as AudioClip
 	start = true
 
 		
@@ -28,7 +29,7 @@ class GameState (MonoBehaviour):
 				Application.LoadLevel("mainmenu")
 		if start:
 			GUI.Box(Rect(0,0,boxW,boxH),"Mission Started")
-			if GUI.Button(Rect(10,boxH - 60,boxW - 20,50),"Main Menu"):
+			if GUI.Button(Rect(10,boxH - 60,boxW - 20,50),"Let's Go!"):
 				start = false
 				MakeAndroid()
 		GUI.EndGroup()
@@ -41,6 +42,7 @@ class GameState (MonoBehaviour):
 			npc as NPC = chars[rand].GetComponent[of NPC]()
 			unless npc == null:
 				npc.isAndroid = true
+				npc.audio.clip = androidSound
 				chars[rand].AddComponent(Android)
 				robotified = true
 		Debug.Log(chars[rand].name + " is the android")
