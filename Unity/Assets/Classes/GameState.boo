@@ -32,4 +32,16 @@ class GameState (MonoBehaviour):
 				Application.LoadLevel("StreetTest")
 			GUI.EndGroup()
 			
+	public def MakeAndroid():
+		robotified = false
+		chars = GameObject.FindGameObjectsWithTag("Characters")
+		while not robotified:
+			rand = Random.Range(0,len(chars) - 1)
+			npc as NPC = chars[rand].GetComponent[of NPC]()
+			unless npc == null:
+				npc.isAndroid = true
+				chars[rand].AddComponent(Android)
+				robotified = true
+		Debug.Log(chars[rand].name + " is the android")
+			
 		

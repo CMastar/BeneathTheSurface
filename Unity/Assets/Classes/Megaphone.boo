@@ -19,4 +19,4 @@ class Megaphone (PlayerItem):
 				unless npc == null:
 					npc.RunFrom(transform.position, scareTime)
 					i = i + 1
-			Debug.Log("Megaphone scared $i NPCs")
+			// Debug.Log("Megaphone scared $i NPCs")
