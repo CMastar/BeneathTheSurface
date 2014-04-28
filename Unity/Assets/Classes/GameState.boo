@@ -5,12 +5,8 @@ class GameState (MonoBehaviour):
 	defeat as bool = false
 	public boxW as int = 400
 	public boxH as int = 300
+	start = true
 
-	def Start ():
-		pass
-	
-	def Update ():
-		pass
 		
 	public def AndroidCaptured(android as GameObject):
 		victory = true
@@ -19,18 +15,23 @@ class GameState (MonoBehaviour):
 		defeat = true
 		
 	def OnGUI():
+		GUI.BeginGroup(Rect((Screen.width - boxW)/2, (Screen.height - boxH)/2,boxW,boxH))
 		text as string
 		if victory:
 			text = "You have captured the dangerous Android. Congratulations"
 		if defeat:
 			text = "The dangerous Android has escaped. Let the consequences fall on your head"
 		if victory or defeat:
-			GUI.BeginGroup(Rect((Screen.width - boxW)/2, (Screen.height - boxH)/2,boxW,boxH))
 			GUI.Box(Rect(0,0,boxW,boxH),"Mission Over")
 			GUI.Label(Rect(10,40,boxW - 20,40),text)
-			if GUI.Button(Rect(10,boxH - 60,boxW - 20,50),"Restart Level"):
-				Application.LoadLevel("StreetTest")
-			GUI.EndGroup()
+			if GUI.Button(Rect(10,boxH - 60,boxW - 20,50),"Main Menu"):
+				Application.LoadLevel("mainmenu")
+		if start:
+			GUI.Box(Rect(0,0,boxW,boxH),"Mission Started")
+			if GUI.Button(Rect(10,boxH - 60,boxW - 20,50),"Main Menu"):
+				start = false
+				MakeAndroid()
+		GUI.EndGroup()
 			
 	public def MakeAndroid():
 		robotified = false

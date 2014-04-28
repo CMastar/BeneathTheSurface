@@ -111,11 +111,12 @@ class NPC (MonoBehaviour):
 		SetWaypoint(waypoint)
 		
 	public def Run(timetoRun as single):
-		if timetoRun == 0:
-			stopRunning = Mathf.Infinity
-		else:
-			stopRunning = Time.time + timetoRun
-		actualForce = 2 * maxForce
+		if actualForce != 0:
+			if timetoRun == 0:
+				stopRunning = Mathf.Infinity
+			else:
+				stopRunning = Time.time + timetoRun
+			actualForce = 2 * maxForce
 		
 		
 	public def Trap():
