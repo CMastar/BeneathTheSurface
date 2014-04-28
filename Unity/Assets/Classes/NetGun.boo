@@ -8,6 +8,7 @@ class NetGun (PlayerItem):
 		if loaded:
 			net as GameObject = GameObject.Instantiate(netObject,transform.position,Quaternion.LookRotation(direction))
 			loaded = false
+			audio.Play()
 		
 	public def Reload() as bool:
 		if loaded:
