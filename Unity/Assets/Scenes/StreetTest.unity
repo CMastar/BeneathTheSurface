@@ -115,7 +115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: spawnOnLevelStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
@@ -486,10 +486,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100000, guid: 86e506bb06218884a9be4032cb135662, type: 2}
-  numberToSpawn: 50
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 25
   spawnRadius: 5
-  spawnOnLevelStart: 0
+  spawnOnLevelStart: 1
   NameGiven: A
 --- !u!23 &180528080
 Renderer:
@@ -1067,10 +1067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100000, guid: 86e506bb06218884a9be4032cb135662, type: 2}
-  numberToSpawn: 10
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 30
   spawnRadius: 5
-  spawnOnLevelStart: 0
+  spawnOnLevelStart: 1
   NameGiven: B
 --- !u!23 &564582624
 Renderer:
@@ -1554,10 +1554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100000, guid: 86e506bb06218884a9be4032cb135662, type: 2}
-  numberToSpawn: 50
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 25
   spawnRadius: 5
-  spawnOnLevelStart: 0
+  spawnOnLevelStart: 1
   NameGiven: A
 --- !u!23 &711414632
 Renderer:
@@ -1852,7 +1852,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: spawnOnLevelStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
@@ -1906,6 +1906,10 @@ Prefab:
       propertyPath: thingToSpawn
       value: 
       objectReference: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+    - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
+      propertyPath: numberToSpawn
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
   m_RootGameObject: {fileID: 1375041173}
@@ -2535,12 +2539,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: spawnOnLevelStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: numberToSpawn
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
+      propertyPath: thingToSpawn
+      value: 
+      objectReference: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
   m_RootGameObject: {fileID: 564582622}
@@ -2621,10 +2629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100000, guid: 86e506bb06218884a9be4032cb135662, type: 2}
-  numberToSpawn: 50
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 25
   spawnRadius: 5
-  spawnOnLevelStart: 0
+  spawnOnLevelStart: 1
   NameGiven: A
 --- !u!23 &1336010648
 Renderer:
@@ -2781,7 +2789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
-  numberToSpawn: 50
+  numberToSpawn: 30
   spawnRadius: 5
   spawnOnLevelStart: 1
   NameGiven: C
@@ -3358,12 +3366,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: spawnOnLevelStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: thingToSpawn
       value: 
-      objectReference: {fileID: 100002, guid: 9e9de5f3748e77f48b08df8eccd83342, type: 2}
+      objectReference: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+    - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
+      propertyPath: numberToSpawn
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
   m_RootGameObject: {fileID: 1926630856}
@@ -3700,7 +3712,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
       propertyPath: spawnOnLevelStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49a172dfe95b8142be8ba82fcb302c7, type: 2}
@@ -3807,10 +3819,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100002, guid: 9e9de5f3748e77f48b08df8eccd83342, type: 2}
-  numberToSpawn: 50
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 30
   spawnRadius: 5
-  spawnOnLevelStart: 0
+  spawnOnLevelStart: 1
   NameGiven: B
 --- !u!23 &1926630858
 Renderer:

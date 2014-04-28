@@ -69,8 +69,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60898d31e012b5c44b4a86d6ca560928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToSpawn: {fileID: 100000, guid: 86e506bb06218884a9be4032cb135662, type: 2}
-  numberToSpawn: 50
+  thingToSpawn: {fileID: 100000, guid: f69605c8eb4c9cb499a64bba364a978d, type: 2}
+  numberToSpawn: 25
   spawnRadius: 5
   spawnOnLevelStart: 1
   NameGiven: 

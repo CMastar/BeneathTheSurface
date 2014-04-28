@@ -15,7 +15,6 @@ GameObject:
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: RandomCrowdMember
   m_TagString: Characters
@@ -179,17 +178,6 @@ MonoBehaviour:
   - {fileID: 100000, guid: e0fde21abe7ae1f4c9d7361585e82f7a, type: 2}
   - {fileID: 100000, guid: 7c465c545bb7c2349896a3911c630a58, type: 2}
   - {fileID: 100000, guid: eee4a6f0a3cedd64484b103ad393293e, type: 2}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85867aae6acba984abc81a07c630d776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
