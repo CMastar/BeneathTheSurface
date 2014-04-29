@@ -5,7 +5,7 @@ As an elite member of the Robot Harassment Team it is your job to seek out and c
 How to play:
 ------------
 WASD or arrow keys - Movement
-CTRL               - Use item
+Space               - Use item
 Mouse              - Select item from the menu
 
 Use your FINGER to poke members of the public. Androids make a distinctive clank.

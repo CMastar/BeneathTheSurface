@@ -1,25 +1,26 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes\GameState.boo">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\readme.txt">
     <Files>
-      <File FileName="Assets\Classes\NPC.boo" Line="15" Column="9" />
+      <File FileName="Assets\readme.txt" Line="8" Column="6" />
+      <File FileName="Assets\Classes\NPC.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\GroupSpawner.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\SpriteAnimation.boo" Line="32" Column="1" />
+      <File FileName="Assets\Classes\SpriteAnimation.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\SpriteAnimationController.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Waypoint.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\RuntimeVisibility.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\PlayerItem.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\EquipmentHandler.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\AndroidDetector.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\NetGun.boo" Line="18" Column="15" />
-      <File FileName="Assets\Classes\Net.boo" Line="17" Column="4" />
-      <File FileName="Assets\Classes\Android.boo" Line="15" Column="22" />
-      <File FileName="Assets\Classes\GameState.boo" Line="32" Column="60" />
+      <File FileName="Assets\Classes\NetGun.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\Net.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\Android.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\GameState.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\Megaphone.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\RandomBodyAssembler.boo" Line="11" Column="27" />
+      <File FileName="Assets\Classes\RandomBodyAssembler.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\PlayerMove.boo" Line="1" Column="1" />
       <File FileName="Assets\Classes\NetRelease.boo" Line="1" Column="1" />
-      <File FileName="Assets\Classes\MainMenu.boo" Line="1" Column="1" />
+      <File FileName="Assets\Classes\MainMenu.boo" Line="11" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
