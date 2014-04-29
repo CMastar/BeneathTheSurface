@@ -15,7 +15,7 @@ class MainMenu (MonoBehaviour):
 				showInstructions = false
 		else:
 			if GUI.Button(Rect(0,0,menuW,50),"Start Game"):
-				Application.LoadLevel("Main Level")
+				Application.LoadLevel("level1")
 			if GUI.Button(Rect(0,60,menuW,50),"Instructions"):
 				showInstructions = true
 			if Application.isWebPlayer:
