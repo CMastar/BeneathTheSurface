@@ -6009,7 +6009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxW: 400
   boxH: 300
-  androidSound: {fileID: 0}
+  androidSound: {fileID: 8300000, guid: 25dfb3b58f559694ab9db97734dbd1b5, type: 3}
 --- !u!4 &1674034183
 Transform:
   m_ObjectHideFlags: 0
